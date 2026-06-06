@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23020202'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Courier New, monospace' font-size='28' font-weight='900' fill='%23ff6a00'%3ERV%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="bgWords"></div>
+
+<div class="main">
+    <div class="frame">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+
+        <div class="logo">
+            <span class="accent">R</span><span class="rest">EGENT</span><span class="apostrophe">'</span><span class="rest">S</span>
+            <span class="accent">V</span><span class="rest">OICE</span>
+        </div>
+
+        <div class="timer" id="timer">00:01:00</div>
+
+        <div class="cam-ui">
+            <div class="cam-left">LIVE</div>
+            <div class="cam-right" id="camTime"></div>
+        </div>
+    </div>
+</div>
+
+<div class="setup-panel" id="setupPanel">
+    <div class="input-wrap">
+        <span class="input-label">MIN</span>
+        <input type="number" id="minutesInput" value="1" min="0" max="720">
+    </div>
+    <button id="startBtn">START</button>
+</div>
+
+<script src="words.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
