@@ -17,7 +17,6 @@ body {
     position: relative;
 }
 
-/* GRID */
 body::before {
     content: "";
     position: absolute;
@@ -32,7 +31,6 @@ body::before {
     pointer-events: none;
 }
 
-/* NOISE */
 body::after {
     content: "";
     position: absolute;
@@ -43,7 +41,6 @@ body::after {
     animation: noise .25s infinite;
 }
 
-/* BG WORDS */
 #bgWords {
     position: absolute;
     inset: 0;
@@ -72,7 +69,6 @@ body::after {
     filter: blur(0px);
 }
 
-/* MAIN */
 .main {
     width: min(960px, 92vw);
     display: flex;
@@ -91,34 +87,29 @@ body::after {
     align-items: center;
 }
 
-/* CORNERS */
 .corner {
     position: absolute;
     width: 42px;
     height: 42px;
 }
-
 .tl {
     top: 0;
     left: 0;
     border-top: 3px solid #ff5e00;
     border-left: 3px solid #ff5e00;
 }
-
 .tr {
     top: 0;
     right: 0;
     border-top: 3px solid #ff5e00;
     border-right: 3px solid #ff5e00;
 }
-
 .bl {
     bottom: 0;
     left: 0;
     border-bottom: 3px solid #ff5e00;
     border-left: 3px solid #ff5e00;
 }
-
 .br {
     bottom: 0;
     right: 0;
@@ -126,8 +117,8 @@ body::after {
     border-right: 3px solid #ff5e00;
 }
 
-/* LOGO */
 .logo {
+    font-family: 'Times New Roman', Georgia, serif;
     font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 900;
     text-transform: uppercase;
@@ -157,7 +148,6 @@ body::after {
     letter-spacing: -0.05em;
 }
 
-/* TIMER */
 .timer {
     margin-top: 3.8rem;
     font-size: clamp(2rem, 5vw, 4rem);
@@ -167,7 +157,6 @@ body::after {
     text-shadow: 0 0 12px rgba(255,90,0,.55);
 }
 
-/* CAMERA UI */
 .cam-ui {
     position: absolute;
     bottom: -1.8rem;
@@ -190,7 +179,6 @@ body::after {
     text-shadow: 0 0 6px rgba(255,0,0,.7), 0 0 14px rgba(255,0,0,.35);
 }
 
-/* CONTROL PANEL */
 .setup-panel {
     position: fixed;
     bottom: 1.4rem;
@@ -268,7 +256,6 @@ body::after {
     color: #ffb070;
 }
 
-/* ANIMATIONS */
 @keyframes flicker {
     0%,18%,22%,25%,53%,57%,100% { opacity: 1; }
     20%,24%,55% { opacity: .6; }
