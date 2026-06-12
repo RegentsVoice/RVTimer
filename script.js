@@ -1,4 +1,3 @@
-// Таймер
 const timer = document.getElementById("timer");
 const startBtn = document.getElementById("startBtn");
 const minutesInput = document.getElementById("minutesInput");
@@ -51,7 +50,6 @@ function startTimer() {
 startBtn.addEventListener("click", startTimer);
 render();
 
-// Камера – текущее время
 setInterval(() => {
     document.getElementById("camTime").textContent =
         new Date().toLocaleString("de-DE", {
@@ -63,7 +61,6 @@ setInterval(() => {
         });
 }, 1000);
 
-// Фоновые слова (используется глобальная переменная dictionary из words.js)
 const bgContainer = document.getElementById("bgWords");
 const placedWords = [];
 
@@ -135,7 +132,6 @@ function spawnWord() {
     }, life);
 }
 
-// Запуск фоновых слов
 for (let i = 0; i < 18; i++) {
     spawnWord();
 }
